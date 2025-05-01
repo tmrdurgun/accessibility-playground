@@ -1,71 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accessibility</title>
-</head>
 
-<body>
-    <header>
-        <h1>Accessibility</h1>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="bg-primary text-white py-3">
+      <div class="container">
+        <h1 class="text-center">Accessibility</h1>
         <nav>
-            <ul>
-                <li><a href="#why-accessibility">Why Accessibility?</a></li>
-                <li><a href="#how-to-make-accessible-websites">How to Make Accessible Websites?</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
-            </ul>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#why-accessibility"
+                >Why Accessibility?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#how-to-make-accessible-websites"
+                >How to Make Accessible Websites?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#conclusion">Conclusion</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
-    
-    <main>
-        <section>
-            <h2 id="why-accessibility">Why Accessibility is Important?</h2>
-            <p>Accessibility is the practice of making your websites usable by as many people as possible. We traditionally
-                think
-                of this as being about people with disabilities, but the practice of making sites accessible also benefits
-                other
-                groups such as those using mobile devices, or those with slow network connections.</p>
-            <ul>
-                <li>Legal reasons: In some places, it is a legal requirement that websites are accessible to people with
-                    disabilities.</li>
-                <li>Moral reasons: We should do our best to ensure our content can be used by as many people as possible.</li>
-                <li>SEO: Search engines give better rankings to sites that are accessible.</li>
-                <li>Mobile: Many of the considerations for accessibility also make your site better for mobile users.</li>
-                </ul>
-        </section>
-        
-        <section>
-            <h2 id="how-to-make-accessible-websites">How to Make Accessible Websites?</h2>
-            <p>There are many things you can do to make your websites more accessible, but here are a few things to consider:
-            </p>
-            <ul>
-                <li>Providing text alternatives for non-text content.</li>
-                <li>Providing captions and other alternatives for multimedia.</li>
-                <li>Being mindful of the needs of color-blind users.</li>
-                <li>Designing your forms for keyboard access.</li>
-            </ul>
-            <figure>
-                <img src="https://picsum.photos/200/300" alt="Placeholder image demonstrating accessibility concepts">
-                <figcaption>An example image illustrating accessibility concepts.</figcaption>
-            </figure>
-            </section>
-            
-            <section>
-                <h2 id="conclusion">Conclusion</h2>
-                <p>Accessibility is important for many reasons, and it is something that we should all be thinking about when
-                    building
-                    websites. By ensuring your sites are accessible, you are making your content available to a larger number of
-                    people, regardless of their abilities.</p>
-            <p>For more information on accessibility, you can visit the <a href="https://www.w3.org/WAI/">W3C Web Accessibility
-                    Initiative</a>.</p>
-        </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2025 Accessibility Playground</p>
-        </footer>
-</body>
 
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 id="why-accessibility" class="mb-3">
+          Why Accessibility is Important?
+        </h2>
+        <p>
+          Accessibility is the practice of making your websites usable by as
+          many people as possible. We traditionally think of this as being about
+          people with disabilities, but the practice of making sites accessible
+          also benefits other groups such as those using mobile devices, or
+          those with slow network connections.
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Legal reasons: In some places, it is a legal requirement that
+            websites are accessible to people with disabilities.
+          </li>
+          <li class="list-group-item">
+            Moral reasons: We should do our best to ensure our content can be
+            used by as many people as possible.
+          </li>
+          <li class="list-group-item">
+            SEO: Search engines give better rankings to sites that are
+            accessible.
+          </li>
+          <li class="list-group-item">
+            Mobile: Many of the considerations for accessibility also make your
+            site better for mobile users.
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-5">
+        <h2 id="how-to-make-accessible-websites" class="mb-3">
+          How to Make Accessible Websites?
+        </h2>
+        <p>
+          There are many things you can do to make your websites more
+          accessible, but here are a few things to consider:
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Providing text alternatives for non-text content.
+          </li>
+          <li class="list-group-item">
+            Providing captions and other alternatives for multimedia.
+          </li>
+          <li class="list-group-item">
+            Being mindful of the needs of color-blind users.
+          </li>
+          <li class="list-group-item">
+            Designing your forms for keyboard access.
+          </li>
+        </ul>
+        <figure class="mt-4 text-center">
+          <img
+            src="https://picsum.photos/200/300"
+            alt="Placeholder image demonstrating accessibility concepts"
+            class="img-fluid rounded"
+          />
+          <figcaption class="mt-2">
+            An example image illustrating accessibility concepts.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="mb-5">
+        <h2 id="conclusion" class="mb-3">Conclusion</h2>
+        <p>
+          Accessibility is important for many reasons, and it is something that
+          we should all be thinking about when building websites. By ensuring
+          your sites are accessible, you are making your content available to a
+          larger number of people, regardless of their abilities.
+        </p>
+        <p>
+          For more information on accessibility, you can visit the
+          <a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a
+          >.
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2 id="contact-form" class="mb-3">Contact Us</h2>
+        <p>
+          Please fill out the form below to get in touch with us. Fields marked
+          with * are required.
+        </p>
+        <form action="/submit" method="post" class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+              aria-describedby="name-instructions"
+            />
+            <div id="name-instructions" class="form-text">
+              Enter your full name.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+              aria-describedby="email-instructions"
+            />
+            <div id="email-instructions" class="form-text">
+              Enter a valid email address (e.g., name@example.com).
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              aria-describedby="message-instructions"
+            ></textarea>
+            <div id="message-instructions" class="form-text">
+              Feel free to share your thoughts or questions here.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2025 Accessibility Playground</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
