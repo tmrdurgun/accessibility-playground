@@ -195,6 +195,50 @@
           </div>
         </form>
       </section>
+
+      <section class="mb-5">
+        <h2 id="keyboard-navigation" class="mb-3">Keyboard Navigation Practice</h2>
+        <p>
+          This section demonstrates how to ensure keyboard navigation works seamlessly for all focusable elements.
+        </p>
+        <nav aria-label="Keyboard Navigation Example" class="mb-4">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#why-accessibility" tabindex="0">Why Accessibility?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-to-make-accessible-websites" tabindex="0">How to Make Accessible Websites?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conclusion" tabindex="0">Conclusion</a>
+            </li>
+          </ul>
+        </nav>
+      
+        <div role="region" aria-labelledby="focusable-elements">
+          <h3 id="focusable-elements">Focusable Elements</h3>
+          <p>
+            Below is an example of focusable elements with proper <code>tabindex</code> usage:
+          </p>
+          <button class="btn btn-secondary" tabindex="0">Focusable Button</button>
+          <a href="#practice-aria" class="btn btn-link" tabindex="0">Focusable Link</a>
+        </div>
+      
+        <div role="region" aria-labelledby="keyboard-alternatives">
+          <h3 id="keyboard-alternatives">Keyboard Alternatives</h3>
+          <p>
+            Avoid using <code>onmouseover</code> or <code>onclick</code> without providing keyboard alternatives. Use event listeners that work with both mouse and keyboard inputs.
+          </p>
+          <button
+            class="btn btn-primary"
+            tabindex="0"
+            onclick="alert('Button clicked!')"
+            onkeydown="if(event.key === 'Enter') alert('Button activated with keyboard!')"
+          >
+            Accessible Button
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-dark text-white py-3">
