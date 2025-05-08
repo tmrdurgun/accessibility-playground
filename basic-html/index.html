@@ -121,57 +121,77 @@
       </section>
 
       <section class="mb-5">
-        <h2 id="contact-form" class="mb-3">Contact Us</h2>
+        <h2 id="practice-aria" class="mb-3">Practice ARIA Attributes</h2>
         <p>
-          Please fill out the form below to get in touch with us. Fields marked
-          with * are required.
+          This section demonstrates the use of ARIA attributes for better screen
+          reader support and accessibility.
         </p>
+        <nav aria-label="Secondary Navigation" class="mb-4">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#why-accessibility"
+                >Why Accessibility?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-to-make-accessible-websites"
+                >How to Make Accessible Websites?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conclusion">Conclusion</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div role="region" aria-labelledby="example-heading">
+          <h3 id="example-heading">Example Content</h3>
+          <p>
+            This is an example of a region with an
+            <code>aria-labelledby</code> attribute. The heading above is used as
+            the label for this region.
+          </p>
+        </div>
+
         <form action="/submit" method="post" class="row g-3">
           <div class="col-md-6">
-            <label for="name" class="form-label">Name *</label>
+            <label for="feedback-name" class="form-label">Name *</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="feedback-name"
+              name="feedback-name"
               class="form-control"
               required
-              aria-describedby="name-instructions"
+              aria-label="Enter your full name"
             />
-            <div id="name-instructions" class="form-text">
-              Enter your full name.
-            </div>
           </div>
 
           <div class="col-md-6">
-            <label for="email" class="form-label">Email *</label>
+            <label for="feedback-email" class="form-label">Email *</label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="feedback-email"
+              name="feedback-email"
               class="form-control"
               required
-              aria-describedby="email-instructions"
+              aria-label="Enter your email address"
             />
-            <div id="email-instructions" class="form-text">
-              Enter a valid email address (e.g., name@example.com).
-            </div>
           </div>
 
           <div class="col-12">
-            <label for="message" class="form-label">Message</label>
+            <label for="feedback-message" class="form-label">Message</label>
             <textarea
-              id="message"
-              name="message"
+              id="feedback-message"
+              name="feedback-message"
               class="form-control"
-              aria-describedby="message-instructions"
+              aria-label="Enter your feedback or message"
             ></textarea>
-            <div id="message-instructions" class="form-text">
-              Feel free to share your thoughts or questions here.
-            </div>
           </div>
 
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">
+              Submit Feedback
+            </button>
           </div>
         </form>
       </section>
